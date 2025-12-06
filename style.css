@@ -28,6 +28,7 @@ textarea{
     width:400px;
     align-content: center;
     border-radius: 60px;
+    overflow: hidden;
     resize: none;
 }
 .mag-glass-cont{
@@ -142,4 +143,38 @@ textarea{
     left: 1px;
     top:16px;
     z-index: -1;
+}
+
+.vol-slider-cont{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    left: 40%;
+    width: 240px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(104, 104, 104);
+    background-color: peachpuff;
+}
+
+.vol-slider{
+    -webkit-appearance:none;
+    appearance: none;
+    
+    
+    width: 200px;
+    height:5px;
+    border-radius: 40px;
+    border: 1.5px solid rgb(104, 104, 104);
+    background-color: rgb(232, 197, 167);
+}
+
+.vol-slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgb(99, 99, 99);
 }
