@@ -30,7 +30,7 @@ srchBtn.addEventListener("click", function(){
 
     const titleList = document.querySelectorAll(".title")
     titleList.forEach(function(title){
-        if (!title.innerText.includes(srchText)){
+        if (!title.innerText.toLowerCase().includes(srchText.toLowerCase())){
             title.parentElement.style.display = "none"
         } else {
             title.parentElement.style.display = "flex"
